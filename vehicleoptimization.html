@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vehicle Optimization</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon-adam.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Adam Carrera</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#projects">Projects</a></li>
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-link"><a class="nav-link" href="seniordesign.html">Automatic Characterization of Ultrasound Transducers in 3D</a></li> -->
+                        <!-- <li class="nav-link"><a class="nav-link" href="seniordesign.html">DIY Stompbox</a></li> -->
+                    </ul>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.htmleducation">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#interests">Interests</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Vehicle Route Optimization Using Fulfillment Center Simulation
+                    </h1>
+                    <div class="subheading mb-5">
+                        Optimization Theory · REST API · Python
+                    </div>
+                    <p class="lead mb-5">With autonomous robots available to service 3 intake locations and 3 docks. The goal is to take as many packages as possible from the intake locations and move them to the docking locations. </p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://github.com/AdamCarrera/fulfilment-center"><i class="fab fa-github"></i></a>
+                    </div>
+                    <figure class="center">
+                        <video src="./assets/mov/the video_Trim.mp4" width="480" height="480" controls>Video Not Supported</video>
+                    </figure>
+                </div>
+            </section>
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h3 class="mb-0">
+                        Optimization Theory
+                    </h3>
+                    <p class="lead mb-5">
+                        For this project, we are going to take a look at a single robot in the warehouse, and optimize it's path such that the delivered packages are maximized.
+
+                        Each intake or dock has a number of packages that can be picked up or dropped off, respectively. Additionally, each location has a distance from the robot. We define the trip's efficiency as the number of packages divided by the distance. Then, we calculate this number for each possible trip and choose the highest.
+
+                        For further optimization reading, see the <a href="./assets/pdf/vehicleoptpaper.pdf">complete paper</a>.
+                    </p>
+                    <h3 class="mb-0">
+                        Code Base
+                    </h3>
+                    
+                    <p class="lead mb-5">The project communicates with a web application using a REST API. Once the development environment was set up, a script was made to GET warehouse data, preform optimization, and POST robot commands. Source code is available on <a href="https://github.com/AdamCarrera/fulfilment-center">Github</a>.</p>
+                    <h3 class="mb-0">
+                        Future Work
+                    </h3>
+                    <p class="lead mb-5">Future work includes scaling the project to work with all of the available robots in the warehouse and optimizing the code for performance.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+    </body>
+</html>
