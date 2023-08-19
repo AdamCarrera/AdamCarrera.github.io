@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Magic: The Gathering Data Analysis</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon-adam.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Adam Carrera</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#projects">Projects</a></li>
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-link"><a class="nav-link" href="seniordesign.html">Automatic Characterization of Ultrasound Transducers in 3D</a></li> -->
+                        <!-- <li class="nav-link"><a class="nav-link" href="seniordesign.html">DIY Stompbox</a></li> -->
+                    </ul>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.htmleducation">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#skills">Skills</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html#interests">Interests</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h2 class="mb-0">
+                        Magic: The Gathering Data Analysis
+                    </h2>
+                    <div class="subheading mb-5">
+                        Python · Power BI  · Excel
+                    </div>
+                    <p class="lead mb-5">Magic: The Gathering (MTG) is the world's most popular trading card game. With tens of thousands of cards, finding answers can be tricky. With data analysis, we can answer questions like "Which set has the most goblin cards?" and "Which cards are worth printing out at home?" </p>
+                    <!-- <figure>
+                        <video src="./assets/mov/belt drive.MOV" class="img-fluid" controls>Video Not Supported</video>
+                    </figure> -->
+                </div>
+            </section>
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h3 class="mb-0">
+                        Data Pipeline
+                    </h3>
+                    <p class="lead mb-5">
+                        <a href="http://scryfall.com">Scryfall</a> is a popular website for researching cards in MTG. It provides daily exports of their card data in bulk files. The file is downloaded from the internet and parsed with Excel's power query. This allows us to keep only the columns that are relevant to the analysis, which saves on file size.
+
+                        New cards are added to the game every few months. Unless the analysis concerns card price, the data only needs to be updated every now and then.
+                    </p>
+
+                    <h3 class="mb-0">
+                        Which Set Has the Most Goblin Cards?
+                    </h3>
+                    <p class="lead mb-5">
+                        Goblins are a popular card type in the game. But, without prior knowledge, it can be hard to know which products contain goblins.
+
+                        Using Power BI, we can view the amount of card types in each set by using a donut chart. Then, we can use a text filter to find each card whose type mentions the word "goblin". We can see that the set with the most goblin type cards is Jumpstart 2022!
+
+                        <figure>
+                            <img src="assets/img/mtg1.png" class="img-fluid" alt="">
+                        </figure>
+
+                        We can also filter with the card's Oracle Text, which is the text that describes what the card actually does in the game. This way, we can find any card that mentions the word "goblin" to find cards that synergize well with our other goblins from Jumpstart 2022.
+
+                        <figure>
+                            <img src="assets/img/mtg3.png" class="img-fluid" alt="">
+                        </figure>
+
+                        Our final filter is Set Name. Previously, we've been using card type to find set names, but we can also use set names to find the different card types. Viewing this requires us to drill down into the report. Instead of displaying set names, we are now looking at card types. We can see that the set "Arabian Nights" has 12 artifact cards.
+
+                        <figure>
+                            <img src="assets/img/mtg2.png" class="img-fluid" alt="">
+                        </figure>
+
+                        This type of analysis helps us look at a large set of data at a high level. When I got back into magic, I looked at each card in each set one by one to learn about the game. But now, we've taken a huge dataset and distilled it into clean and actionable information.
+                    </p>
+                </div>
+            </section>
+            <hr class="m-0" />
+    </body>
+</html>
